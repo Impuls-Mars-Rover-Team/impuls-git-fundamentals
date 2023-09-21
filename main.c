@@ -9,6 +9,7 @@
 int main(void){
 	
 	while(1){
+		/* Don't do anything */
 		__NOP();
 	}
 }
