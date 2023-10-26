@@ -1,13 +1,17 @@
-# hello_impuls
 <h1>GIT & Github quickstart</h1>
 
 <h2>Git</h2>
-  
+
+<p>
+
+  Link do pobrania gita: https://git-scm.com/downloads
+</p>
+
 <h3>Klonowanie repozytorium</h3>
 
 <p>
   
-  Aby sklonować repozytorium, odpalamy folder doktórego chcemy pobrać jego zawartość w terminalu i uruchamiamy komendę:  
+  Aby sklonować repozytorium, odpalamy folder do którego chcemy pobrać jego zawartość w terminalu i uruchamiamy komendę:  
   `git clone link-do-repozytorium`  
   Przykładowo, aby sklonować to konkretne repozytorium, podajemy komendę:  
   `git clone https://github.com/ImpulsMarsRover/hello_impuls.git`
@@ -73,7 +77,7 @@
 
 <p>
 
-  Aby pobrać zmiany zapisane na serwerze - przez nas samych jeśli coś nie wyszło albo przez kogoś innego żeby uniknąć problemów, odpalamy komendę:
+  Aby pobrać zmiany zapisane na serwerze - przez nas samych jeśli coś nie wyszło albo przez kogoś innego żeby uniknąć problemów, odpalamy komendę:  
   `git pull`
 </p>
 
