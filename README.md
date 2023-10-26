@@ -1,5 +1,9 @@
 # hello_impuls
-<h2>Klonowanie repozytorium</h2>
+<h1>GIT & Github quickstart</h1>
+
+<h2>Git</h2>
+  
+<h3>Klonowanie repozytorium</h3>
 
 <p>
   
@@ -10,7 +14,7 @@
 </p>
 
 
-<h2>Wprowadzanie zmian w repozytorium</h2>
+<h3>Wprowadzanie zmian w repozytorium</h3>
 <p>
 
   Aby wybrać pliki, które mają zostać uwzględnione w commicie (konkretnym zapisie w historii zmian) używamy commendy `add`.  
@@ -25,7 +29,7 @@
   Podając informację opisującą zmiany, które wprowadziliśmy
 </p>
 
-<h2>Wrzucanie commitów na github</h2>
+<h3>Wrzucanie commitów na github</h3>
 <p>
   
   Aby wrzucić wprowadzone przez nas zmiany na githuba, używamy komendy `git push`.  
@@ -35,7 +39,7 @@
   
 </p>
 
-<h2>Rozgałęzianie projektu - branch</h2>
+<h3>Rozgałęzianie projektu - branch</h3>
 <p>
   W systemie kontroli wersji GIT można rozgłąziać projekt, tak aby ułatwić pracę nad dodawaniem nowych funkcjonalności itp. W ten sposób, początkowo zmiany wprowadzane są tylko w rozgałęzieniu i w razie awarii projektu można jeszcze łatwiej wrócić do stanu sprzed awarii.
 </p>
@@ -63,4 +67,46 @@
 
   Origin to zdefiniowana nazwa serwera. Podczas klonowania zazwyczaj powstaje automatycznie jako "origin", jeśli tak się nie stanie możemy dodać ją komendą `remote add`:  
   `git remote add origin https://github.com/ImpulsMarsRover/hello_impuls.git` gdzie link jest linkiem do konkretnego np. repozytorium na githubie
+</p>
+
+<h3>Pobieranie zmian zapisanych na serwerze</h3>
+
+<p>
+
+  Aby pobrać zmiany zapisane na serwerze - przez nas samych jeśli coś nie wyszło albo przez kogoś innego żeby uniknąć problemów, odpalamy komendę:
+  `git pull`
+</p>
+
+
+<h2>Github - tricki</h2>
+
+<h3>Projects</h3>
+
+<p>
+  Na githubie możemy utworzyć "projekt", gdzie można utworzyć przyjemną w obsłudze listę rzeczy do zrobienia w projekcie.
+  Jeśli nad projektem pracuje kilka osób, można im przydzielać zadania z poziomu githubowego projektu.
+  Zadania na liście to do mogą być zautomatyzowane - np. na podstawie Issues (nowy issue - nowy wpis na to do, zamknięty issue - odhaczenie na liście to do).
+  Więcej informacji: https://docs.github.com/en/issues/planning-and-tracking-with-projects  
+</p>
+
+<h3>Issues</h3>
+
+<p>
+
+  Issues to miejsce,w którym można zgłaszać problemy z działaniem programu, bugi lub automatyzować rozwój projektu.
+</p>
+
+<h3>Releases</h3>
+
+<p>
+
+  Po zakończeniu pracy nad programem można utworzyć release.  
+  Przykładowo jeśli zachodzą jakieś ważne zmiany, możemy wtedy rozróżnić projekt np. na wersję 1.0 i 2.0, gdzie:
+
+  <ul>
+    <li>1.0 byłaby wersją np. na płytkę PCB zaprojektowaną w 2021 roku</li>
+    <li>2.0 byłaby wersją np. na płytkę PCB zaprojektowaną w 2023 roku</li>
+  </ul>
+
+  Do release można wrzucić np. finalny kod źródłowy aktualny dla tych etapów, pliki binarne (np. .hex dla mikrokontrolerów, .exe itp dla PC), dokumentacje dotyczące konkretnych wersji, instalatory oraz narzędzia służące do stworzenia tej wersji (np. instalator IDE w starszej wersji obsługującej starszy kompilator)
 </p>
