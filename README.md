@@ -14,25 +14,39 @@
 <p>
   
   Aby sklonować repozytorium, odpalamy folder do którego chcemy pobrać jego zawartość w terminalu i uruchamiamy komendę:  
-  `git clone link-do-repozytorium`  
+```
+git clone link-do-repozytorium  
+```  
   Przykładowo, aby sklonować to konkretne repozytorium, podajemy komendę:  
-  `git clone https://github.com/ImpulsMarsRover/hello_impuls.git`
+  ```
+  git clone https://github.com/ImpulsMarsRover/hello_impuls.git
+```
 </p>
 
 
 <h3>Wprowadzanie zmian w repozytorium</h3>
 <p>
 
-  Aby wybrać pliki, które mają zostać uwzględnione w commicie (konkretnym zapisie w historii zmian) używamy commendy `add`.  
-  `add nazwa-pliku` dodaje konkretny plik  
-  `add *` dodaje wszystkie zmienione pliki
+  Aby wybrać pliki, które mają zostać uwzględnione w commicie (konkretnym zapisie w historii zmian) używamy komendy `add`.  
+  `git add nazwa-pliku` dodaje konkretny plik  
+  `git add *` dodaje wszystkie zmienione pliki, 
+
 </p>
 
 <p>
 
   Aby utworzyć commit, po dodaniu plików komendą `add`, używamy komendy:  
-  `git commit -m wiadomosc-opisujaca-wprowadzone-zmiany`
-  Podając informację opisującą zmiany, które wprowadziliśmy
+  `git commit -m "wiadomosc-opisujaca-wprowadzone-zmiany"`
+  Podając informację opisującą zmiany, które wprowadziliśmy. Proces commitowania może wyglądać tak:
+
+
+```
+git status
+git add *
+git commit -m "dodane-jakies-zmiany"
+git log
+```
+Komenda `git status` zwraca aktualny stan repozytorium - zmiany w plikach oraz czy te zmiany są uwzględnione w przygotowywanym commicie. `qit log` wyswietla historię zmian lokalnego repozytorium.
 </p>
 
 <h3>Wrzucanie commitów na github</h3>
@@ -56,7 +70,9 @@
   lub:  
   `git branch nazwa-nowego-rozgalezienia`
   
-  przy czym warto korzystać z zasad clean code i podać znaczącą nazwę dla tekeigo rozgałęzienia - np. laser-zaglady jeśli nowy feature ma dodać laser zagłady do robota
+  przy czym warto korzystać z zasad clean code i podać znaczącą nazwę dla tekeigo rozgałęzienia - np. laser-zaglady jeśli nowy feature ma dodać laser zagłady do robota.
+
+  Komenda `git branch` bez argumentów zwraca branche obecne w lokalnym repozytorium.  
 </p>
 
 <p>
@@ -69,10 +85,26 @@
 
   Aby wrzucić branch na githuba, należy przyjść do branchu który chcemy wrzucić oraz skorzystać z pełnej komendy git push:  
   `git push serwer-na-ktory-wrzucamy branch-do-ktorego-wrzucamy`, np żeby wrzucić lokalny branch new-branch-test:  
-  `git push origin new-branch-test`.
-
-  Origin to zdefiniowana nazwa serwera. Podczas klonowania zazwyczaj powstaje automatycznie jako "origin", jeśli tak się nie stanie możemy dodać ją komendą `remote add`:  
+  ```
+  git push origin new-branch-test
+```
+Można uniknąć podawania argumentów, ustawiając "upstream" dodajac parametr `-u` wrzucając pierwszy commit na serwer.  
+***UWAGA*** - po przejsciu do innego branchu, chcąc wrzucić na serwer lokalne zmiany trzeba zdefiniować upstream na aktualny branch albo za każdym razem podawać nazwę branchu na serwerze do którego mają trafić zmiany
+```
+git push -u http://www.github.com/konto-uzytkownika/repozytorium-uzytkownika branch-do-ktorego-wrzucamy
+```
+Adres serwera mozna również zastąpić zdefiniowana nazwą, np. origin jak powyżej.
+Origin to zdefiniowana nazwa serwera. Podczas klonowania zazwyczaj powstaje automatycznie jako "origin", jeśli tak się nie stanie możemy dodać ją komendą `remote add`:  
   `git remote add origin https://github.com/ImpulsMarsRover/hello_impuls.git` gdzie link jest linkiem do konkretnego np. repozytorium na githubie
+
+  Aby połączyć główny branch z nowym rozgłązieniem (praca nad nowymfeature skończona itp), należy przejść do branchu do którego chcemy wprowadzić zmianny np. komendą git switch oraz użyć komendy merge, podając nazwę branchu,z którego chcemy zaimportować zmiany
+
+```
+git branch
+git switch master
+git merge new-feature
+```
+
 </p>
 
 <h3>Pobieranie zmian zapisanych na serwerze</h3>
@@ -80,7 +112,9 @@
 <p>
 
   Aby pobrać zmiany zapisane na serwerze - przez nas samych jeśli coś nie wyszło albo przez kogoś innego żeby uniknąć problemów, odpalamy komendę:  
-  `git pull`
+  ```
+  git pull
+```
 </p>
 
 
