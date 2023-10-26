@@ -1,5 +1,7 @@
 <h1>GIT & Github quickstart</h1>
 
+![In case of fire: 1) git commit 2) git push 3) leave building](/instructions.jpg)
+
 <h2>Git</h2>
 
 <p>
