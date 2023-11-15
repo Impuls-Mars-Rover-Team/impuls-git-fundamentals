@@ -19,7 +19,7 @@ git clone link-do-repozytorium
 ```  
   Przykładowo, aby sklonować to konkretne repozytorium, podajemy komendę:  
   ```
-  git clone https://github.com/ImpulsMarsRover/hello_impuls.git
+  git clone https://github.com/ImpulsMarsRover/impuls-git-fundamentals
 ```
 </p>
 
