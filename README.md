@@ -29,7 +29,14 @@
   
     git push origin nazwa-twojego-lokalnego-branchu-z-punktu-4
   <li>Na GitHubie w zakładce Pull Requests utwórz nowy Pull Request aby scalić wprowadzone przez Ciebie zmiany z głównym branchem repozytorium</li>
+
+  <li>Poczekaj na sprawdzenie i zatwierdzenie przez admininstratora zmian </li>
+  <li>Dobra robota!</li>
   </ol>
+
+
+
+  Poniżej znajdziesz dokładniejszy opis komend GITa.
   </p>
 
 
