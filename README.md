@@ -8,6 +8,7 @@
   <ol>
   <li>Załóż konto na GitHubie</li>
   <li>Zainstaluj GIT</li>
+  <li>Otwórz w terminalu / CMD / Wierszu Polecenia / Powershellu / Bashu / Z-Shellu folder w którym chcesz umieścić folder z repozytorium</li>
   <li>Sklonuj to repozytorium</li>
     
     git clone https://github.com/ImpulsMarsRover/impuls-git-fundamentals.git
