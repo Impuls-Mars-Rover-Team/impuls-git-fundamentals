@@ -1,0 +1,16 @@
+# Szablon .gitignore dla Keil uVision / VS Code
+# @gwitkowski2000
+
+# Keil uVision
+*.o
+*.d
+**/Listings/*
+**/Objects/*
+**/RTE/*
+**/DebugConfig/*
+*.uvguix.*
+*.uvoptx
+#*.uvprojx
+
+# vscode - lokalne ustawienia
+**/.vscode
