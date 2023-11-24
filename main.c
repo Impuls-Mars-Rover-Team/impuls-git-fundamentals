@@ -2,6 +2,7 @@
 /*
  * @gwitkowski2000: hello impuls
  * @gwitkowski2000: hello again
+ * @PiotrekChochol: hello impuls
  */
 // test
 #include <stm32f407xx.h>
